@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>complete project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <!-- humbeger -->
+        <div class="humberger">
+            <i class="fa-solid fa-bars" data-visible="true"></i>
+            <i class="fa-solid fa-close" data-visible="false"></i>
+        </div>
+        <!-- disktop menu -->
+         <nav class="container disktop-menu">
+            <ul class="menu-link">
+                <li><a href="#">Our Philosophy</a></li>
+                <li><a href="#">Houses</a></li>
+                <li><a href="#">Map</a></li>
+            </ul>
+            <h1>RetreatM5</h1>
+            <ul class="menu-link">
+                <li><a href="#">Laisure</a></li>
+                <li><a href="#">How to get there</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+        </nav>
+        <!-- mobile menu -->
+         <nav class="mobile-menu" data-visible="false">
+            <div class="navigation">
+                <h1>RetreatM5</h1>  
+                <ul class="mobile-link">
+                    <li><a href="#">Our Philosophy</a></li>
+                    <li><a href="#">Houses</a></li>
+                    <li><a href="#">Map</a></li>
+                    <li><a href="#">Laisure</a></li>
+                    <li><a href="#">How to get there</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+                <div class="btn-action">
+                    <button class="btn-primary">Book a room</button>
+                    <button class="btn-secondry">Write us</button>
+                </div>
+            </div>
+         </nav>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <h1>you cannot do yoga <br>
+                yoga is your natural state</h1>
+                <button class="btn">learn more</button>
+        </div>
+    </section>
+
+    <section>
+
+        <div class="container yoga">
+            <div class="content">
+                <h1>YOU CAN ALWAYS CONTROL  WHAT GOES ON INSIDE</h1>
+                <p>Donec enim diam vulputate ut. Amet venenatis urna cursus  eget nunc scelerisque viverra mauris. Sit amet venenatis urna cursus eget nunc scelerisque.</p>
+            </div>
+        </div>
+
+    </section>
+<!-- git config --global --add safe.directory '*'  waa command file direction lagu xalinaayo waana git hub -->
+    <section>
+     <div class="container">
+        <div class=" info-boxs">
+            <!-- box 1 -->
+            <div class="box">
+                <img src="https://mobirise.com/extensions/retreatm5/outdoor-yoga-classes/assets/images/pexels-chermiti-mohamed-3049225.jpg" alt="">
+                <h1>Why you should go to yoga</h1>
+                <p>Scelerisque eu ultrices vitae auctor eu augue ut lectus. Porta non pulvinar neque laoreet sollicitudin nibh</p>
+                <div>
+                    <button class="btn">View more</button>
+                </div>
+            </div>
+            <!-- box 2 -->
+            <div class="box">
+                <img src="https://mobirise.com/extensions/retreatm5/outdoor-yoga-classes/assets/images/pexels-chermiti-mohamed-3049225.jpg" alt="">
+                <h1>Why you should go to yoga</h1>
+                <p>Scelerisque eu ultrices vitae auctor eu augue ut lectus. Porta non pulvinar neque laoreet sollicitudin nibh</p>
+                <div>
+                    <button class="btn">View more</button>
+                </div>
+            </div>
+            <!-- box 3 -->
+            <div class="box">
+                <img src="https://mobirise.com/extensions/retreatm5/outdoor-yoga-classes/assets/images/pexels-chermiti-mohamed-3049225.jpg" alt="">
+                <h1>Why you should go to yoga</h1>
+                <p>Scelerisque eu ultrices vitae auctor eu augue ut lectus. Porta non pulvinar neque laoreet sollicitudin nibh</p>
+                <div>
+                    <button class="btn">View more</button>
+                </div>
+            </div>
+            <!-- box 4 -->
+            <div class="box">
+                <img src="https://mobirise.com/extensions/retreatm5/outdoor-yoga-classes/assets/images/pexels-chermiti-mohamed-3049225.jpg" alt="">
+                <h1>Why you should go to yoga</h1>
+                <p>Scelerisque eu ultrices vitae auctor eu augue ut lectus. Porta non pulvinar neque laoreet sollicitudin nibh</p>
+                <div>
+                    <button class="btn">View more</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+
+
+
+
+    <script>
+        const hamburger = document.querySelector('.humberger');
+        const mobileMenu = document.querySelector(".mobile-menu");
+        const icons = document.querySelectorAll("i");
+
+        hamburger.addEventListener("click", function (event) {
+            const isVisible = mobileMenu.getAttribute('data-visible');
+            if (isVisible == "true") {
+                // qari hiding
+                mobileMenu.setAttribute('data-visible', "false");
+                icons[0].setAttribute('data-visible', "true");
+                icons[1].setAttribute('data-visible', "false");
+            } else if (isVisible == "false") {
+                // soo bandhig showing
+                mobileMenu.setAttribute('data-visible', "true");
+                icons[0].setAttribute('data-visible', "false");
+                icons[1].setAttribute('data-visible', "true");
+            }
+        });
+
+
+    </script>
+</body>
+</html>
