@@ -91,6 +91,7 @@ img{
 }
 .btn:hover{
     background:linear-gradient(#101f40,#652a62,#ff3c9e);
+    transition: background 0.5s ease-in-out;
 }
 /* section two */
 .nasiib{
