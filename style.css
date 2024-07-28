@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Anybody", sans-serif;
+}
+
+header{
+    background-color: #fafaf6;
+    height: 4.5rem;
+}
+img{
+    width: 100%;
+}
+.container{
+    width: min(90%, 1120px);
+    margin-inline: auto;
+}
+.disktop-menu{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.disktop-menu .menu-link{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.disktop-menu .menu-link li{
+    list-style: none;
+}
+.disktop-menu .menu-link li a{
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: #2b2b2b;
+    font-weight: 500;
+}
+.disktop-menu .menu-link li a:hover{
+    color: #646fd4;
+    transition: 0.5s ease-in-out;
+}
+.disktop-menu h1{
+    font-size: 1.5625rem;
+    font-weight: 700;
+    color:  #2b2b2b;
+}
+.disktop-menu h1:hover{
+    color: #646fd4;
+    transition: 0.5s ease-in-out;
+}
+
+
+.mobile-menu{
+    display: none;
+}
+.humberger{
+    display: none;
+}
+
+
+.hero{
+    height: calc(100vh - 4.5rem);   
+    background:linear-gradient(rgba(0,0,50,0.5),rgba(0,0,50,0.5)),url("https://mobirise.com/extensions/retreatm5/outdoor-yoga-classes/assets/images/pexels-min-an-1234035.jpg") bottom/cover no-repeat;
+    background-attachment: fixed;
+}
+.hero .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.hero h1{
+    font-size: 5rem;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+}
+.hero .btn{
+    padding: 1rem 5rem;
+    background-color: #646fd4;
+    font-size: 1.25rem;
+    color: white;
+    border:none;
+    border-radius: 1rem;
+}
+
+/* section two */
+.nasiib{
+    height: 60rem;
+    padding: 5rem 0;
+}
+.yoga{
+    background:linear-gradient(rgba(0,0,100,0.6),rgba(0,0,100,0.5)),url("https://mobirise.com/extensions/retreatm5/outdoor-yoga-classes/assets/images/pexels-lucas-pezeta-2121066.jpg") top/cover no-repeat;
+    background-attachment:fixed;
+    height: 100vh;
+    border-radius: 25px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-block: 6rem;
+}
+.yoga .content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 45.5rem;
+    color: white;
+    margin-bottom: 6rem;
+}
+.yoga .content h1{
+    font-size: 3.125rem;
+    font-weight: 700;
+    text-align: center;
+}
+.yoga .content p{
+    font-size: 1.25rem;
+    text-align: center;
+    font-weight: 700;
+
+}
+.info-boxs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.box img{
+    border-radius: 2rem;    
+}
+.box h1{
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: black;
+}
+.box p{
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: rgba(100, 100, 100);
+}
+.box .btn{
+    padding: 1rem 2.25rem;
+    background-color: #646fd4;
+    color: #fff;
+    font-size: 1.25rem;
+    border: none;
+    border-radius: 1rem;
+}
+.box .btn:hover{
+    background-color: blue;
+    transition: 0.8s ease-in-out;
+}
+@media(max-width:768px){
+    .disktop-menu{
+        display: none;
+    }
+    header{
+        height:0;
+    }
+    .humberger{
+        display: flex;
+        /* background-color: #646fd4; */
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        color: white;
+        position: absolute;
+        top: 9%;
+        right: 5%;
+        z-index: 111111;
+    }
+    
+    .mobile-menu{
+        display: flex;
+        justify-content: center;
+        background-color: #646fd4;
+        position: fixed;
+        inset: 0 0 0 0 ;
+        transform: translateX(0%);
+        transition: transform 0.8s ease-in-out;
+    }
+    .mobile-menu[data-visible="false"]{
+        transform: translateX(100%);
+    }
+    .humberger i[data-visible ="true"]{
+        display: flex;
+    }
+    .humberger i[data-visible ="false"]{
+        display: none;
+    }
+
+    .mobile-menu .navigation{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 3rem;
+        gap: 1.5rem;
+        width: 100%;
+    }
+    .mobile-menu .mobile-link{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mobile-menu li{
+        list-style: none;
+        padding: 5px;
+    }
+    .mobile-menu li a{
+        text-decoration: none;
+        color: white;
+        font-size: 1.25rem;
+        font-weight: 500;
+    }
+    .mobile-menu h1{
+        font-size: 2.3rem;
+        font-weight: 700;
+        border-bottom: 2px solid white;
+        color: white;
+        padding-bottom: 10px;
+    }
+    .mobile-menu .btn-action{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 80%;
+    }
+    .btn-action .btn-primary,.btn-secondry{
+        padding: 15px;
+        font-size: 1.25rem;
+        font-weight: 500;
+        border-radius: 1rem;
+        border: none;
+    }
+    .btn-action .btn-secondry{
+        color: white;
+        background-color: transparent;
+        border: 2px solid white;
+    }
+   .hero {
+    height: 100vh;
+
+   }
+   .hero h1{
+    font-size: 4rem;
+    text-align: center;
+   }
+   .hero .btn{
+    padding: 1rem 4rem;
+   }
+   .yoga .content h1{
+    font-size: 2.125rem;
+   }
+   .yoga .content p{
+    font-size: 1.25rem;
+   }
+   .info-boxs{
+    display: grid;
+    grid-template-columns: 1fr;
+   }
+}
